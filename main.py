@@ -3,9 +3,9 @@ import torch
 import cv2
 import numpy as np
 from detectron2.engine import DefaultPredictor
-from densepose import add_densepose_config
-from densepose.vis.extractor import DensePoseResultExtractor
-from densepose.vis.densepose_results import DensePoseResultsFineSegmentationVisualizer as Visualizer
+from detectron2.projects.DensePose.densepose import add_densepose_config
+from detectron2.projects.DensePose.densepose.vis.extractor import DensePoseResultExtractor
+from detectron2.projects.DensePose.densepose.vis.densepose_results import DensePoseResultsFineSegmentationVisualizer as Visualizer
 
 # Initialize Detectron2 configuration for DensePose
 cfg = get_cfg()
